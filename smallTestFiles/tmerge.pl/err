@@ -1,0 +1,486 @@
+######################################################################################################################
+######################################################################################################################
+##
+##    Parameters/environment information:
+##
+##    - Using TMP DIR: /tmp/ (edit the TMPDIR environment variable to change that)
+##    - Minimum read support required per merged transcript model: 2
+##    - Exon overhang tolerance when merging: 12 bases
+##    - Will use 1 CPUs
+##
+######################################################################################################################
+######################################################################################################################
+Parsing GTF input...
+Done. Found 151 exons and 54 transcripts.
+Building contigs (sets of overlapping transcripts)...
+Done. Built 10 contigs.
+Comparing transcript structures...
+Calculating spliced read support...
+DEBUG: tr1 tr6_1
+DEBUG:  tr1 tr6_1 vs tr2 tr11_1
+DEBUG:  tr1 tr6_1 vs tr2 tr1_4
+DEBUG:  tr1 tr6_1 vs tr2 tr16_5
+DEBUG:  tr1 tr6_1 vs tr2 tr1_5
+DEBUG:  tr1 tr6_1 vs tr2 tr1_5b
+DEBUG:  tr1 tr6_1 vs tr2 tr1_8
+DEBUG:  tr1 tr6_1 vs tr2 tr1_2
+DEBUG:  tr1 tr6_1 vs tr2 tr4_1
+DEBUG:  tr1 tr6_1 vs tr2 tr5_1
+DEBUG:  tr1 tr6_1 vs tr2 tr5_2
+DEBUG:  tr1 tr6_1 vs tr2 tr1_1
+DEBUG:  tr1 tr6_1 vs tr2 tr10_1
+DEBUG:  tr1 tr6_1 vs tr2 tr3_1
+DEBUG:  tr1 tr6_1 vs tr2 tr12_2
+DEBUG:  tr1 tr6_1 vs tr2 tr12_1
+DEBUG:  tr1 tr6_1 vs tr2 tr15_5
+DEBUG:  tr1 tr6_1 vs tr2 trX
+DEBUG:   tr1 tr6_1 vs tr2 trX INCOMP 10
+DEBUG: tr1 tr11_1
+DEBUG:  tr1 tr11_1 vs tr2 tr1_4
+DEBUG:  tr1 tr11_1 vs tr2 tr16_5
+DEBUG:  tr1 tr11_1 vs tr2 tr1_5
+DEBUG:  tr1 tr11_1 vs tr2 tr1_5b
+DEBUG:  tr1 tr11_1 vs tr2 tr1_8
+DEBUG:  tr1 tr11_1 vs tr2 tr1_2
+DEBUG:  tr1 tr11_1 vs tr2 tr4_1
+DEBUG:  tr1 tr11_1 vs tr2 tr5_1
+DEBUG:  tr1 tr11_1 vs tr2 tr5_2
+DEBUG:  tr1 tr11_1 vs tr2 tr1_1
+DEBUG:  tr1 tr11_1 vs tr2 tr10_1
+DEBUG:  tr1 tr11_1 vs tr2 tr3_1
+DEBUG:  tr1 tr11_1 vs tr2 tr12_2
+DEBUG:  tr1 tr11_1 vs tr2 tr12_1
+DEBUG:  tr1 tr11_1 vs tr2 tr15_5
+DEBUG:  tr1 tr11_1 vs tr2 trX
+DEBUG:  tr1 tr11_1 vs tr2 tr1_6
+DEBUG:  tr1 tr11_1 vs tr2 tr1_7
+DEBUG:  tr1 tr11_1 vs tr2 tr9_1
+DEBUG: tr1 tr1_4
+DEBUG:  tr1 tr1_4 vs tr2 tr16_5
+DEBUG:  tr1 tr1_4 vs tr2 tr1_5
+DEBUG:  tr1 tr1_4 vs tr2 tr1_5b
+DEBUG:  tr1 tr1_4 vs tr2 tr1_8
+DEBUG:  tr1 tr1_4 vs tr2 tr1_2
+DEBUG:  tr1 tr1_4 vs tr2 tr4_1
+DEBUG:  tr1 tr1_4 vs tr2 tr5_1
+DEBUG:  tr1 tr1_4 vs tr2 tr5_2
+DEBUG:  tr1 tr1_4 vs tr2 tr1_1
+DEBUG:  tr1 tr1_4 vs tr2 tr10_1
+DEBUG:  tr1 tr1_4 vs tr2 tr3_1
+DEBUG:  tr1 tr1_4 vs tr2 tr12_2
+DEBUG:  tr1 tr1_4 vs tr2 tr12_1
+DEBUG:  tr1 tr1_4 vs tr2 tr15_5
+DEBUG:  tr1 tr1_4 vs tr2 trX
+DEBUG:  tr1 tr1_4 vs tr2 tr1_6
+DEBUG:  tr1 tr1_4 vs tr2 tr1_7
+DEBUG:  tr1 tr1_4 vs tr2 tr9_1
+DEBUG: tr1 tr16_5
+DEBUG:  tr1 tr16_5 vs tr2 tr1_5
+DEBUG:  tr1 tr16_5 vs tr2 tr1_5b
+DEBUG:  tr1 tr16_5 vs tr2 tr1_8
+DEBUG:  tr1 tr16_5 vs tr2 tr1_2
+DEBUG:  tr1 tr16_5 vs tr2 tr4_1
+DEBUG:  tr1 tr16_5 vs tr2 tr5_1
+DEBUG:  tr1 tr16_5 vs tr2 tr5_2
+DEBUG:  tr1 tr16_5 vs tr2 tr1_1
+DEBUG:  tr1 tr16_5 vs tr2 tr10_1
+DEBUG:  tr1 tr16_5 vs tr2 tr3_1
+DEBUG:  tr1 tr16_5 vs tr2 tr12_2
+DEBUG:  tr1 tr16_5 vs tr2 tr12_1
+DEBUG:  tr1 tr16_5 vs tr2 tr15_5
+DEBUG:  tr1 tr16_5 vs tr2 trX
+DEBUG:  tr1 tr16_5 vs tr2 tr1_6
+DEBUG:  tr1 tr16_5 vs tr2 tr1_7
+DEBUG:  tr1 tr16_5 vs tr2 tr9_1
+DEBUG: tr1 tr1_5
+DEBUG:  tr1 tr1_5 vs tr2 tr1_5b
+DEBUG:  tr1 tr1_5 overlaps tr2 tr1_5b
+DEBUG:    tr1 intron 0 = tr2 intron 0
+DEBUG:    tr1 intron 1 = tr2 intron 1
+DEBUG:    tr1 intron 2 = tr2 intron 2
+DEBUG:    tr1 intron 3 = tr2 intron 3
+DEBUG:    tr1 intron 4 = tr2 intron 4
+DEBUG:    tr1 intron 5 = tr2 intron 5
+DEBUG:     tr1 tr1_5 vs tr2 tr1_5b FULLMATCH 2
+DEBUG:  tr1 tr1_5 vs tr2 tr1_8
+DEBUG:  tr1 tr1_5 vs tr2 tr1_2
+DEBUG:  tr1 tr1_5 vs tr2 tr4_1
+DEBUG:  tr1 tr1_5 vs tr2 tr5_1
+DEBUG:  tr1 tr1_5 vs tr2 tr5_2
+DEBUG:  tr1 tr1_5 vs tr2 tr1_1
+DEBUG:  tr1 tr1_5 vs tr2 tr10_1
+DEBUG:  tr1 tr1_5 vs tr2 tr3_1
+DEBUG:  tr1 tr1_5 vs tr2 tr12_2
+DEBUG:  tr1 tr1_5 vs tr2 tr12_1
+DEBUG:  tr1 tr1_5 vs tr2 tr15_5
+DEBUG:  tr1 tr1_5 vs tr2 trX
+DEBUG:  tr1 tr1_5 vs tr2 tr1_6
+DEBUG:  tr1 tr1_5 vs tr2 tr1_7
+DEBUG:  tr1 tr1_5 vs tr2 tr9_1
+DEBUG: tr1 tr1_5b
+DEBUG: tr1 IS CONTAINED in tr1_5
+DEBUG: tr1 tr1_8
+DEBUG:  tr1 tr1_8 vs tr2 tr1_2
+DEBUG:  tr1 tr1_8 vs tr2 tr4_1
+DEBUG:  tr1 tr1_8 vs tr2 tr5_1
+DEBUG:  tr1 tr1_8 vs tr2 tr5_2
+DEBUG:  tr1 tr1_8 vs tr2 tr1_1
+DEBUG:  tr1 tr1_8 vs tr2 tr10_1
+DEBUG:  tr1 tr1_8 vs tr2 tr3_1
+DEBUG:  tr1 tr1_8 vs tr2 tr12_2
+DEBUG:  tr1 tr1_8 vs tr2 tr12_1
+DEBUG:  tr1 tr1_8 vs tr2 tr15_5
+DEBUG:  tr1 tr1_8 vs tr2 trX
+DEBUG:  tr1 tr1_8 vs tr2 tr1_6
+DEBUG:  tr1 tr1_8 vs tr2 tr1_7
+DEBUG:  tr1 tr1_8 vs tr2 tr9_1
+DEBUG: tr1 tr1_2
+DEBUG:  tr1 tr1_2 vs tr2 tr4_1
+DEBUG:  tr1 tr1_2 vs tr2 tr5_1
+DEBUG:  tr1 tr1_2 vs tr2 tr5_2
+DEBUG:  tr1 tr1_2 vs tr2 tr1_1
+DEBUG:  tr1 tr1_2 overlaps tr2 tr1_1
+DEBUG:    tr1 intron 0 = tr2 intron 0
+DEBUG:    tr1 intron 1 = tr2 intron 1
+DEBUG:    tr1 intron 2 = tr2 intron 2
+DEBUG:     tr1 tr1_2 vs tr2 tr1_1 FULLMATCH 2
+DEBUG:  tr1 tr1_2 vs tr2 tr10_1
+DEBUG:  tr1 tr1_2 vs tr2 tr3_1
+DEBUG:  tr1 tr1_2 vs tr2 tr12_2
+DEBUG:  tr1 tr1_2 vs tr2 tr12_1
+DEBUG:  tr1 tr1_2 vs tr2 tr15_5
+DEBUG:  tr1 tr1_2 vs tr2 trX
+DEBUG:  tr1 tr1_2 vs tr2 tr1_6
+DEBUG:  tr1 tr1_2 vs tr2 tr1_7
+DEBUG:  tr1 tr1_2 vs tr2 tr9_1
+DEBUG: tr1 tr4_1
+DEBUG:  tr1 tr4_1 vs tr2 tr5_1
+DEBUG:  tr1 tr4_1 overlaps tr2 tr5_1
+DEBUG:    tr1 intron 0 != tr2 intron 0
+DEBUG:  tr1 tr4_1 vs tr2 tr5_2
+DEBUG:  tr1 tr4_1 overlaps tr2 tr5_2
+DEBUG:    tr1 intron 0 != tr2 intron 0
+DEBUG:  tr1 tr4_1 vs tr2 tr1_1
+DEBUG:  tr1 tr4_1 vs tr2 tr10_1
+DEBUG:  tr1 tr4_1 vs tr2 tr3_1
+DEBUG:  tr1 tr4_1 vs tr2 tr12_2
+DEBUG:  tr1 tr4_1 vs tr2 tr12_1
+DEBUG:  tr1 tr4_1 vs tr2 tr15_5
+DEBUG:  tr1 tr4_1 vs tr2 trX
+DEBUG:  tr1 tr4_1 vs tr2 tr1_6
+DEBUG:  tr1 tr4_1 vs tr2 tr1_7
+DEBUG:  tr1 tr4_1 vs tr2 tr9_1
+DEBUG: tr1 tr5_1
+DEBUG:  tr1 tr5_1 vs tr2 tr5_2
+DEBUG:  tr1 tr5_1 overlaps tr2 tr5_2
+DEBUG:    tr1 intron 0 = tr2 intron 0
+DEBUG:    tr1 intron 1 = tr2 intron 1
+DEBUG:    tr1 intron 2 = tr2 intron 2
+DEBUG:     tr1 tr5_1 vs tr2 tr5_2 FULLMATCH 2
+DEBUG:  tr1 tr5_1 vs tr2 tr1_1
+DEBUG:  tr1 tr5_1 vs tr2 tr10_1
+DEBUG:  tr1 tr5_1 vs tr2 tr3_1
+DEBUG:  tr1 tr5_1 vs tr2 tr12_2
+DEBUG:  tr1 tr5_1 vs tr2 tr12_1
+DEBUG:  tr1 tr5_1 vs tr2 tr15_5
+DEBUG:  tr1 tr5_1 vs tr2 trX
+DEBUG:  tr1 tr5_1 vs tr2 tr1_6
+DEBUG:  tr1 tr5_1 vs tr2 tr1_7
+DEBUG:  tr1 tr5_1 vs tr2 tr9_1
+DEBUG: tr1 tr5_2
+DEBUG: tr1 IS CONTAINED in tr5_1
+DEBUG: tr1 tr1_1
+DEBUG: tr1 IS CONTAINED in tr1_2
+DEBUG: tr1 tr10_1
+DEBUG:  tr1 tr10_1 vs tr2 tr3_1
+DEBUG:  tr1 tr10_1 vs tr2 tr12_2
+DEBUG:  tr1 tr10_1 vs tr2 tr12_1
+DEBUG:  tr1 tr10_1 vs tr2 tr15_5
+DEBUG:  tr1 tr10_1 vs tr2 trX
+DEBUG:  tr1 tr10_1 vs tr2 tr1_6
+DEBUG:   tr1 tr10_1 vs tr2 tr1_6 INCOMP 10
+DEBUG: tr1 tr3_1
+DEBUG:  tr1 tr3_1 vs tr2 tr12_2
+DEBUG:  tr1 tr3_1 vs tr2 tr12_1
+DEBUG:  tr1 tr3_1 vs tr2 tr15_5
+DEBUG:  tr1 tr3_1 vs tr2 trX
+DEBUG:  tr1 tr3_1 vs tr2 tr1_6
+DEBUG:   tr1 tr3_1 vs tr2 tr1_6 INCOMP 10
+DEBUG: tr1 tr12_2
+DEBUG:  tr1 tr12_2 vs tr2 tr12_1
+DEBUG:  tr1 tr12_2 vs tr2 tr15_5
+DEBUG:  tr1 tr12_2 vs tr2 trX
+DEBUG:  tr1 tr12_2 vs tr2 tr1_6
+DEBUG:   tr1 tr12_2 vs tr2 tr1_6 INCOMP 10
+DEBUG: tr1 tr12_1
+DEBUG:  tr1 tr12_1 vs tr2 tr15_5
+DEBUG:  tr1 tr12_1 vs tr2 trX
+DEBUG:  tr1 tr12_1 vs tr2 tr1_6
+DEBUG:   tr1 tr12_1 vs tr2 tr1_6 INCOMP 10
+DEBUG: tr1 tr15_5
+DEBUG:  tr1 tr15_5 vs tr2 trX
+DEBUG:  tr1 tr15_5 vs tr2 tr1_6
+DEBUG:  tr1 tr15_5 vs tr2 tr1_7
+DEBUG:  tr1 tr15_5 vs tr2 tr9_1
+DEBUG: tr1 trX
+DEBUG:  tr1 trX vs tr2 tr1_6
+DEBUG:   tr1 trX vs tr2 tr1_6 INCOMP 10
+DEBUG: tr1 tr1_6
+DEBUG:  tr1 tr1_6 vs tr2 tr1_7
+DEBUG:  tr1 tr1_6 vs tr2 tr9_1
+DEBUG: tr1 tr1_7
+DEBUG:  tr1 tr1_7 vs tr2 tr9_1
+DEBUG: tr1 tr9_1
+Merging spliced reads...
+DEBUG: tr1 tr6_1
+DEBUG: tr1 tr11_1
+DEBUG: tr1 tr1_4
+DEBUG: tr1 tr16_5
+DEBUG: tr1 tr1_5
+DEBUG:  tr1 tr1_5 vs tr2 tr1_5b
+DEBUG:  tr1 tr1_5 vs tr2 tr1_8
+DEBUG:  tr1 tr1_5 vs tr2 tr1_2
+DEBUG:   intronTr2 #0: 101, 149
+DEBUG:    intronTr1 #0: 101, 149
+DEBUG:     overlap 1
+DEBUG:   intronTr2 #1: 201, 249
+DEBUG:    intronTr1 #1: 201, 249
+DEBUG:     overlap 1
+DEBUG:   intronTr2 #2: 311, 349
+DEBUG:    intronTr1 #2: 311, 349
+DEBUG:     overlap 1
+DEBUG:    YES 2
+DEBUG:    tr1 tr1_5 vs tr2 tr1_2 MATCH 4
+DEBUG:  tr1 tr1_5 vs tr2 tr4_1
+DEBUG:  tr1 tr1_5 vs tr2 tr5_1
+DEBUG:  tr1 tr1_5 vs tr2 tr5_2
+DEBUG:  tr1 tr1_5 vs tr2 tr1_1
+DEBUG:  tr1 tr1_5 vs tr2 tr10_1
+DEBUG:  tr1 tr1_5 vs tr2 tr3_1
+DEBUG:  tr1 tr1_5 vs tr2 tr12_2
+DEBUG:  tr1 tr1_5 vs tr2 tr12_1
+DEBUG:  tr1 tr1_5 vs tr2 tr15_5
+DEBUG:  tr1 tr1_5 vs tr2 trX
+DEBUG:  tr1 tr1_5 vs tr2 tr1_6
+DEBUG:  tr1 tr1_5 vs tr2 tr1_7
+DEBUG:  tr1 tr1_5 vs tr2 tr9_1
+DEBUG: tr1 tr1_5b
+DEBUG: tr1 IS CONTAINED in tr1_5
+DEBUG: tr1 tr1_8
+DEBUG: tr1 tr1_2
+DEBUG: tr1 IS CONTAINED in tr1_5
+DEBUG: tr1 tr4_1
+DEBUG: tr1 tr5_1
+DEBUG:  tr1 tr5_1 vs tr2 tr5_2
+DEBUG:  tr1 tr5_1 vs tr2 tr1_1
+DEBUG:  tr1 tr5_1 vs tr2 tr10_1
+DEBUG:  tr1 tr5_1 vs tr2 tr3_1
+DEBUG:  tr1 tr5_1 vs tr2 tr12_2
+DEBUG:  tr1 tr5_1 vs tr2 tr12_1
+DEBUG:  tr1 tr5_1 vs tr2 tr15_5
+DEBUG:  tr1 tr5_1 vs tr2 trX
+DEBUG:  tr1 tr5_1 vs tr2 tr1_6
+DEBUG:  tr1 tr5_1 vs tr2 tr1_7
+DEBUG:  tr1 tr5_1 vs tr2 tr9_1
+DEBUG: tr1 tr5_2
+DEBUG: tr1 IS CONTAINED in tr5_1
+DEBUG: tr1 tr1_1
+DEBUG: tr1 IS CONTAINED in tr1_2
+DEBUG: tr1 tr10_1
+DEBUG: tr1 tr3_1
+DEBUG: tr1 tr12_2
+DEBUG: tr1 tr12_1
+DEBUG: tr1 tr15_5
+DEBUG: tr1 trX
+DEBUG: tr1 tr1_6
+DEBUG: tr1 tr1_7
+DEBUG: tr1 tr9_1
+Calculating monoexonic read support...
+DEBUG: tr1 tr8_1
+DEBUG:  tr1 tr8_1 vs tr2 tr1_3
+DEBUG:   tr1 tr8_1 vs tr2 tr1_3 INCOMP 10
+DEBUG: tr1 tr1_3
+DEBUG:  tr1 tr1_3 vs tr2 tr2_2
+DEBUG:   tr1 tr1_3 vs tr2 tr2_2 INCOMP 10
+DEBUG: tr1 tr2_2
+DEBUG:  tr1 tr2_2 vs tr2 tr2_1
+DEBUG:     tr1 tr2_2 vs tr2 tr2_1 FULLMATCH 2
+DEBUG: tr1 tr2_1
+DEBUG: tr1 IS CONTAINED in tr2_2
+Merging monoexonic reads...
+DEBUG: tr1 tr8_1
+DEBUG: tr1 tr1_3
+DEBUG: tr1 tr2_2
+DEBUG:  tr1 tr2_2 vs tr2 tr2_1
+DEBUG: tr1 tr2_1
+DEBUG: tr1 IS CONTAINED in tr2_2
+Calculating spliced read support...
+Merging spliced reads...
+Calculating monoexonic read support...
+DEBUG: tr1 tr17_1
+DEBUG:  tr1 tr17_1 vs tr2 tr17_9
+DEBUG:     tr1 tr17_1 vs tr2 tr17_9 FULLMATCH 2
+DEBUG:  tr1 tr17_1 vs tr2 tr17_3
+DEBUG:  tr1 tr17_1 vs tr2 tr17_8
+DEBUG:     tr1 tr17_1 vs tr2 tr17_8 FULLMATCH 2
+DEBUG:  tr1 tr17_1 vs tr2 tr17_2
+DEBUG:     tr1 tr17_1 vs tr2 tr17_2 FULLMATCH 2
+DEBUG:  tr1 tr17_1 vs tr2 tr17_4
+DEBUG:  tr1 tr17_1 vs tr2 tr17_7
+DEBUG:  tr1 tr17_1 vs tr2 tr17_5
+DEBUG:   tr1 tr17_1 vs tr2 tr17_5 INCOMP 10
+DEBUG: tr1 tr17_9
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_3
+DEBUG:  tr1 tr17_3 vs tr2 tr17_8
+DEBUG:  tr1 tr17_3 vs tr2 tr17_2
+DEBUG:  tr1 tr17_3 vs tr2 tr17_4
+DEBUG:  tr1 tr17_3 vs tr2 tr17_7
+DEBUG:   tr1 tr17_3 vs tr2 tr17_7 INCOMP 10
+DEBUG: tr1 tr17_8
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_2
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_4
+DEBUG:  tr1 tr17_4 vs tr2 tr17_7
+DEBUG:  tr1 tr17_4 vs tr2 tr17_5
+DEBUG:  tr1 tr17_4 vs tr2 tr17_6
+DEBUG: tr1 tr17_7
+DEBUG:  tr1 tr17_7 vs tr2 tr17_5
+DEBUG:     tr1 tr17_7 vs tr2 tr17_5 FULLMATCH 2
+DEBUG:  tr1 tr17_7 vs tr2 tr17_6
+DEBUG:     tr1 tr17_7 vs tr2 tr17_6 FULLMATCH 2
+DEBUG: tr1 tr17_5
+DEBUG: tr1 IS CONTAINED in tr17_7
+DEBUG: tr1 tr17_6
+DEBUG: tr1 IS CONTAINED in tr17_7
+Merging monoexonic reads...
+DEBUG: tr1 tr17_1
+DEBUG:  tr1 tr17_1 vs tr2 tr17_9
+DEBUG:  tr1 tr17_1 vs tr2 tr17_3
+DEBUG:  tr1 tr17_1 vs tr2 tr17_8
+DEBUG:  tr1 tr17_1 vs tr2 tr17_2
+DEBUG:  tr1 tr17_1 vs tr2 tr17_4
+DEBUG:  tr1 tr17_1 vs tr2 tr17_7
+DEBUG:  tr1 tr17_1 overlaps tr2 tr17_7
+DEBUG:  tr1 tr17_1 vs tr2 tr17_5
+DEBUG:  tr1 tr17_1 vs tr2 tr17_6
+DEBUG: tr1 tr17_9
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_3
+DEBUG: tr1 tr17_8
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_2
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_4
+DEBUG: tr1 tr17_7
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_5
+DEBUG: tr1 IS CONTAINED in tr17_1
+DEBUG: tr1 tr17_6
+DEBUG: tr1 IS CONTAINED in tr17_1
+Calculating spliced read support...
+DEBUG: tr1 tr22_1
+Merging spliced reads...
+DEBUG: tr1 tr22_1
+Calculating monoexonic read support...
+DEBUG: tr1 tr21_1
+DEBUG:  tr1 tr21_1 vs tr2 tr21_3
+DEBUG:  tr1 tr21_1 vs tr2 tr21_2
+DEBUG:     tr1 tr21_1 vs tr2 tr21_2 FULLMATCH 2
+DEBUG:  tr1 tr21_1 vs tr2 tr21_4
+DEBUG:  tr1 tr21_1 vs tr2 tr21_5
+DEBUG:   tr1 tr21_1 vs tr2 tr21_5 INCOMP 10
+DEBUG: tr1 tr21_3
+DEBUG:  tr1 tr21_3 vs tr2 tr21_2
+DEBUG:  tr1 tr21_3 vs tr2 tr21_4
+DEBUG:  tr1 tr21_3 vs tr2 tr21_5
+DEBUG:   tr1 tr21_3 vs tr2 tr21_5 INCOMP 10
+DEBUG: tr1 tr21_2
+DEBUG: tr1 IS CONTAINED in tr21_1
+DEBUG: tr1 tr21_4
+DEBUG:  tr1 tr21_4 vs tr2 tr21_5
+DEBUG: tr1 tr21_5
+Merging monoexonic reads...
+DEBUG: tr1 tr21_1
+DEBUG:  tr1 tr21_1 vs tr2 tr21_3
+DEBUG:  tr1 tr21_1 vs tr2 tr21_2
+DEBUG:  tr1 tr21_1 vs tr2 tr21_4
+DEBUG:  tr1 tr21_1 vs tr2 tr21_5
+DEBUG: tr1 tr21_3
+DEBUG: tr1 tr21_2
+DEBUG: tr1 IS CONTAINED in tr21_1
+DEBUG: tr1 tr21_4
+DEBUG: tr1 tr21_5
+Calculating spliced read support...
+DEBUG: tr1 tr18_1
+DEBUG:  tr1 tr18_1 vs tr2 tr20_1
+DEBUG:  tr1 tr18_1 vs tr2 tr19_1
+DEBUG:   tr1 tr18_1 vs tr2 tr19_1 INCOMP 10
+DEBUG: tr1 tr20_1
+DEBUG:  tr1 tr20_1 vs tr2 tr19_1
+DEBUG: tr1 tr19_1
+Merging spliced reads...
+DEBUG: tr1 tr18_1
+DEBUG: tr1 tr20_1
+DEBUG: tr1 tr19_1
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+DEBUG: tr1 tr13_1
+DEBUG:  tr1 tr13_1 vs tr2 tr13_2
+DEBUG:  tr1 tr13_1 overlaps tr2 tr13_2
+DEBUG:    tr1 intron 0 = tr2 intron 0
+DEBUG:     tr1 tr13_1 vs tr2 tr13_2 FULLMATCH 2
+DEBUG: tr1 tr13_2
+DEBUG: tr1 IS CONTAINED in tr13_1
+Merging spliced reads...
+DEBUG: tr1 tr13_1
+DEBUG:  tr1 tr13_1 vs tr2 tr13_2
+DEBUG: tr1 tr13_2
+DEBUG: tr1 IS CONTAINED in tr13_1
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+DEBUG: tr1 tr23_1
+DEBUG:  tr1 tr23_1 vs tr2 tr24_1
+DEBUG: tr1 tr24_1
+Merging spliced reads...
+DEBUG: tr1 tr23_1
+DEBUG: tr1 tr24_1
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+DEBUG: tr1 tr26_2
+DEBUG:  tr1 tr26_2 vs tr2 tr26_1
+DEBUG: tr1 tr26_1
+Merging spliced reads...
+DEBUG: tr1 tr26_2
+DEBUG: tr1 tr26_1
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+DEBUG: tr1 tr27_1
+DEBUG:  tr1 tr27_1 vs tr2 tr27_2
+DEBUG: tr1 tr27_2
+Merging spliced reads...
+DEBUG: tr1 tr27_1
+DEBUG: tr1 tr27_2
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+DEBUG: tr1 tr7_2
+DEBUG:  tr1 tr7_2 vs tr2 tr7_1
+DEBUG: tr1 tr7_1
+Merging spliced reads...
+DEBUG: tr1 tr7_2
+DEBUG: tr1 tr7_1
+Calculating monoexonic read support...
+Merging monoexonic reads...
+Calculating spliced read support...
+Merging spliced reads...
+Calculating monoexonic read support...
+DEBUG: tr1 tr14_1
+Merging monoexonic reads...
+DEBUG: tr1 tr14_1
+Done.

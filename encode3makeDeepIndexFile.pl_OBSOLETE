@@ -1,0 +1,174 @@
+#!/usr/bin/perl -w
+
+use warnings;
+use strict;
+use Data::Dumper;
+use utf8;
+use JSON;
+#use diagnostics;
+#use HTTP::Request;
+#use LWP;
+
+#use Time::localtime;
+use lib "$ENV{'ENCODE3_PERLMODS'}";
+use lib "/users/rg/jlagarde/julien_utils/";
+#use getEncode3Object;
+#use prepareEncode3DccConnections;
+use indexHashToIndexFile;
+#use indexFileToHash;
+use processJsonToHash;
+
+$Data::Dumper::Sortkeys =1;
+open JSON, "$ARGV[0]" or die $!;
+
+
+my $encodeDccBaseUrl="https://www.encodeproject.org";
+$encodeDccBaseUrl=~/http.*\/\/(\S+)/;
+my $hostName=$1;
+my $encodeFilesBasedir=$ENV{'ENCODE3_FILE_REPOSITORY'}."/$hostName";
+
+print STDERR "Reading files collection\n";
+my $filesCollectionTree = processJsonToHash("$ARGV[0]/files.json");
+print STDERR "Reading experiments collection\n";
+my $experimentsCollectionTree = processJsonToHash("$ARGV[0]/experiments.json");
+print STDERR "Reading replicates collection\n";
+my $replicatesCollectionTree = processJsonToHash("$ARGV[0]/replicates.json");
+print STDERR "Reading biosamples collection\n";
+my $biosamplesCollectionTree = processJsonToHash("$ARGV[0]/biosamples.json");
+
+
+my $countFiles=0;
+foreach my $file (@{$$filesCollectionTree{'@graph'}}){
+	my %indexHash=();
+
+#	if($$file{'lab'} eq '/labs/thomas-gingeras/' && $countFiles < 5){
+	$countFiles++;
+
+	#if(exists $$exp{'library'}{'accession'} && $$lib{'library'}{'accession'} eq $library){
+
+	#foreach my $file (@{$$exp{'files'}}){
+		my $filePath=$encodeFilesBasedir.$$file{'href'};
+		$filePath=~s/(^\s*)|(\s*$)//g; #remove trailing and leading spaces if present
+		$indexHash{$filePath}{'file.accession'}=$$file{'accession'};
+		#$indexHash{$filePath}{'experiment.dbxrefs'}=join(", ", @{$$exp{'dbxrefs'}});
+		#$indexHash{$filePath}{'experiment.accession'}=$$exp{'accession'};
+		$indexHash{$filePath}{'file.href'}=$$file{'href'};
+		$indexHash{$filePath}{'file.status'}=$$file{'status'};
+		$indexHash{$filePath}{'file.md5sum'}=$$file{'md5sum'};
+		$indexHash{$filePath}{'file.assembly'}=$$file{'assembly'};
+		$indexHash{$filePath}{'file.file_format'}=$$file{'file_format'};
+		$indexHash{$filePath}{'file.award'}=stripBase($$file{'award'});
+		$indexHash{$filePath}{'file.lab'}=stripBase($$file{'lab'});
+		$indexHash{$filePath}{'file.file_size'}=$$file{'file_size'};
+		$indexHash{$filePath}{'file.output_type'}=$$file{'output_type'};
+		$indexHash{$filePath}{'file.date_created'}=$$file{'date_created'};
+		$indexHash{$filePath}{'file.paired_end'}=$$file{'paired_end'};
+		$indexHash{$filePath}{'file.submitted_file_name'}=$$file{'submitted_file_name'};
+		$indexHash{$filePath}{'file.paired_with'}=stripBase($$file{'paired_with'});
+		$indexHash{$filePath}{'file.submitted_by'}=stripBase($$file{'submitted_by'});
+
+		my $replicate=undef;
+		if($$file{'replicate'}){
+			$replicate=stripBase($$file{'replicate'});
+			#get replicate info
+			foreach my $repEntry (@{$$replicatesCollectionTree{'@graph'}}){
+				if($$repEntry{'uuid'} eq $replicate){
+					#my $json_rep_text=getEncode3("$encodeDccBaseUrl/$replicate");
+					my $json_rep_object=$repEntry;
+					#print Dumper $json_rep_object;
+					$indexHash{$filePath}{'replicate.paired_ended'}=$$json_rep_object{'paired_ended'};
+					$indexHash{$filePath}{'replicate.uuid'}=$$json_rep_object{'uuid'};
+					$indexHash{$filePath}{'replicate.technical_replicate_number'}=$$json_rep_object{'technical_replicate_number'};
+					$indexHash{$filePath}{'replicate.read_length'}=$$json_rep_object{'read_length'};
+					$indexHash{$filePath}{'replicate.platform'}=$$json_rep_object{'platform'}{'term_name'};
+					$indexHash{$filePath}{'library.accession'}=$$json_rep_object{'library'}{'accession'};
+					$indexHash{$filePath}{'library.strand_specificity'}=$$json_rep_object{'library'}{'strand_specificity'};
+					$indexHash{$filePath}{'library.size_range'}=$$json_rep_object{'library'}{'size_range'};
+					$indexHash{$filePath}{'library.biosample'}=stripBase($$json_rep_object{'library'}{'biosample'});
+					$indexHash{$filePath}{'library.lab'}=stripBase($$json_rep_object{'library'}{'lab'});
+					$indexHash{$filePath}{'library.aliases'}=joinArray(\@{$$json_rep_object{'library'}{'aliases'}});
+					$indexHash{$filePath}{'library.depleted_in_term_name'}=joinArray(\@{$$json_rep_object{'library'}{'depleted_in_term_name'}});
+					$indexHash{$filePath}{'library.depleted_in_term_id'}=joinArray(\@{$$json_rep_object{'library'}{'depleted_in_term_id'}});
+					$indexHash{$filePath}{'library.nucleic_acid_term_name'}=$$json_rep_object{'library'}{'nucleic_acid_term_name'};
+					$indexHash{$filePath}{'library.nucleic_acid_term_id'}=$$json_rep_object{'library'}{'nucleic_acid_term_id'};
+					foreach my $al (@{$$json_rep_object{'library'}{'aliases'}}){
+						if ($al =~ /^thomas-gingeras:(\S+)$/){
+							$indexHash{$filePath}{'labExpId'}=$1;
+						}
+					}
+				#get biosample info
+				if($$json_rep_object{'library'}{'biosample'}){
+					foreach my $bsEntry (@{$$biosamplesCollectionTree{'@graph'}}){
+						if($$bsEntry{'accession'} eq stripBase($$json_rep_object{'library'}{'biosample'})){
+							#my $json_bios_text=getEncode3("$encodeDccBaseUrl/$$json_rep_object{'library'}{'biosample'}");
+							my $json_bios_object=$bsEntry;
+				#print Dumper $json_bios_object;
+							$indexHash{$filePath}{'biosample.donor.sex'}=$$json_bios_object{'donor'}{'sex'};
+							$indexHash{$filePath}{'biosample.accession'}=$$json_bios_object{'accession'};
+							$indexHash{$filePath}{'biosample.donor.accession'}=$$json_bios_object{'donor'}{'accession'};
+							$indexHash{$filePath}{'biosample.biosample_term_id'}=$$json_bios_object{'biosample_term_id'};
+							$indexHash{$filePath}{'biosample.biosample_term_name'}=$$json_bios_object{'biosample_term_name'};
+							$indexHash{$filePath}{'biosample.organism.name'}=$$json_bios_object{'organism'}{'name'};
+							$indexHash{$filePath}{'biosample.biosample_type'}=$$json_bios_object{'biosample_type'};
+							$indexHash{$filePath}{'biosample.source.name'}=$$json_bios_object{'source'}{'name'};
+							$indexHash{$filePath}{'biosample.subcellular_fraction_term_name'}=$$json_bios_object{'subcellular_fraction_term_name'};
+							$indexHash{$filePath}{'biosample.life_stage'}=$$json_bios_object{'life_stage'};
+							$indexHash{$filePath}{'biosample.system_slims'}=joinArray(\@{$$json_bios_object{'system_slims'}});
+							$indexHash{$filePath}{'biosample.developmental_slims'}=joinArray(\@{$$json_bios_object{'developmental_slims'}});
+							$indexHash{$filePath}{'biosample.organ_slims'}=joinArray(\@{$$json_bios_object{'organ_slims'}});
+							$indexHash{$filePath}{'experiment.accession'}=stripBase($$json_rep_object{'experiment'});
+
+							$indexHash{$filePath}{'biosample.aliases'}=joinArray(\@{$$json_bios_object{'aliases'}});
+							last;
+						}
+					}
+				}
+			#download experiment info
+			if($$json_rep_object{'experiment'}){
+				foreach my $expEntry (@{$$experimentsCollectionTree{'@graph'}}){
+					if($$expEntry{'accession'} eq stripBase($$json_rep_object{'experiment'})){
+						#my $json_exp_text=getEncode3("$encodeDeccBaseUrl/$$json_rep_object{'experiment'}");
+						my $json_exp_object=$expEntry;
+						$indexHash{$filePath}{'experiment.assay_term_name'}=$$json_exp_object{'assay_term_name'};
+						last
+					}
+				}
+			}
+			last;
+			}
+		}
+	}
+	else{
+		print STDERR "No replicate attribute found for $$file{'accession'}\n";
+	}
+#	print STDERR Dumper \%indexHash;
+my $indexFile=indexHashToIndexFile(\%indexHash);
+print $indexFile;
+
+#}
+}
+
+sub stripBase{
+	my $string=$_[0];
+	if(defined $string){
+		my @string=split("/", $string);
+		return $string[$#string];
+	}
+	else{
+		return undef;
+	}
+}
+
+sub joinArray{
+	my @array=@{$_[0]};
+#	print STDERR "b- ".join(",",@array)." -\n";
+	@array=grep defined, @array; #remove undefined values
+	if(@array){
+#		print STDERR "a- ".join(",",@array)." -\n";
+@array= sort @array;
+return(join(",",@array));
+}
+else{
+	return undef;
+}
+}

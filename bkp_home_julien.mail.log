@@ -1,0 +1,44 @@
+- trying localhost
+- connected to localhost
+<220 tofo.crg.es ESMTP Sendmail 8.14.3/8.14.3; Wed, 3 Aug 2011 18:55:48 +0200
+>HELO tofo.crg.es
+<250 tofo.crg.es Hello localhost.localdomain [127.0.0.1], pleased to meet you
+>MAIL FROM: <julien.lagarde@crg.es>
+<250 2.1.0 <julien.lagarde@crg.es>... Sender ok
+>RCPT TO: <julien.lagarde@crg.es>
+<250 2.1.5 <julien.lagarde@crg.es>... Recipient ok
+>DATA
+<354 Enter mail, end with "." on a line by itself
+>Auth: JL-perl-mailer <julien.lagarde@crg.es>
+>Subject: bkp_home_julien: ERRORS=0 (0 lines in err log)
+>Date: Wed, 3 Aug 2011 18:55:48 +0200
+>Mime-Version: 1.0
+>Content-Type: text/plain; charset="iso-8859-1"
+>To: Julien <julien.lagarde@crg.es>
+>Content-Transfer-Encoding: quoted-printable
+>From: JL-perl-mailer <julien.lagarde@crg.es>
+>
+>FROM_JL-perl-mailer
+..
+
+Last lines of rsync log:
+
+sent 373017008958 bytes  received 48689 bytes  25940892.08 bytes/sec
+total size is 937706072077  speedup is 2.51
+
+
+Last lines of rsync err:
+>
+.
+<250 2.0.0 p73GtmBG015890 Message accepted for delivery
+>QUIT
+<221 2.0.0 tofo.crg.es closing connection
+OK. Log says:
+Mail::Sendmail v. 0.79 - Wed Aug  3 18:55:48 2011
+Date: Wed, 3 Aug 2011 18:55:48 +0200
+Server: localhost Port: 25
+From: julien.lagarde@crg.es
+Subject: bkp_home_julien: ERRORS=0 (0 lines in err log) 
+To: julien.lagarde@crg.es
+    
+Result: 250 2.0.0 p73GtmBG015890 Message accepted for delivery

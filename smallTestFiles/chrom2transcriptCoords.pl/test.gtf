@@ -1,0 +1,11 @@
+ERCC-00002	erccSpikein	exon	1	1061	0	+	.	transcript_id "ERCC-00002";
+chr1	erccSpikein	exon	11	20	0	+	.	transcript_id "tr1";
+chr1	erccSpikein	exon	31	40	0	+	.	transcript_id "tr1";
+chr1	erccSpikein	exon	51	60	0	+	.	transcript_id "tr1";
+chr1	erccSpikein	exon	71	80	0	+	.	transcript_id "tr1";
+chr1	erccSpikein	exon	111	120	0	-	.	transcript_id "tr2";
+chr1	erccSpikein	exon	131	140	0	-	.	transcript_id "tr2";
+chr1	erccSpikein	exon	151	160	0	-	.	transcript_id "tr2";
+chr1	erccSpikein	exon	171	180	0	-	.	transcript_id "tr2";
+chr1	erccSpikein	exon	271	300	0	+	.	transcript_id "tr3";
+chr1	erccSpikein	exon	371	400	0	-	.	transcript_id "tr4";

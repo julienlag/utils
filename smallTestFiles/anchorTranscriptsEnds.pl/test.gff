@@ -1,0 +1,40 @@
+##cage only
+#TSS: anchoring, no adjustment
+#TTS: no anchoring, no adjustment
+chr1	hts	exon	100	150	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";
+chr1	hts	exon	200	250	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";
+chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";
+#TSS: anchoring, adjustment to 96
+#TTS: no anchoring, no adjustment
+chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";
+chr1	hts	exon	200	250	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";
+chr1	hts	exon	300	350	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";
+##polyA only
+#TSS: no anchoring, no adjustment
+#TTS: anchoring, adjustment to 100
+chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";
+chr2	hts	exon	200	250	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";
+chr2	hts	exon	300	350	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";
+#TSS: no anchoring, no adjustment
+#TTS: anchoring, no adjustment
+chr2	hts	exon	100	150	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";
+chr2	hts	exon	200	250	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";
+chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";
+##polyA + cage
+#TSS: anchoring, adjustment to 350
+#TTS: anchoring, adjustment to 100
+chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";
+chr3	hts	exon	200	250	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";
+chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";
+#TSS: anchoring, no adjustment
+#TTS: anchoring, no adjustment
+chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";
+chr3	hts	exon	200	250	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";
+chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";
+##none
+chr4	hts	exon	10	150	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";
+chr4	hts	exon	200	250	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";
+chr4	hts	exon	300	350	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";
+chr4	hts	exon	100	150	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";
+chr4	hts	exon	200	250	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";
+chr4	hts	exon	300	350	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";

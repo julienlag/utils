@@ -1,0 +1,150 @@
+#!/usr/bin/env perl 
+
+use strict;
+use warnings;
+use Data::Dumper;
+use utf8;
+use JSON; 
+use diagnostics;
+use File::stat;
+#use Time::localtime;
+use POSIX qw( strftime );
+use lib "$ENV{'ENCODE3_PERLMODS'}"; 
+use lib "/users/rg/jlagarde/julien_utils/";
+use indexHashToIndexFile;
+use indexFileToHash;
+use getEncode3Object;
+my $firstFieldKey=$ARGV[1]; # name of the json property to output in column 1
+$Data::Dumper::Sortkeys =1;
+open JSON, "$ARGV[0]" or die $!;
+print STDERR " Infile is: $ARGV[0]\n";
+
+my $jsonTimeStampEpoch = stat($ARGV[0])->ctime;
+print "# jsonDownloaded ". strftime('%Y-%m-%d %H:%M:%S %Z', localtime($jsonTimeStampEpoch))."\n";
+my $whole_json_file='';
+{
+        local $/;
+        $whole_json_file=<JSON>;
+}
+close JSON;
+my $tree = decode_json($whole_json_file);
+my %indexHash=();
+my $tmpIndex="tmpIndex.".$ARGV[0].$ARGV[1];
+$tmpIndex=~s/\//./g;
+#print STDERR "$tmpIndex\n";
+open TMPINDEX, ">$tmpIndex" or die $!;
+binmode TMPINDEX, ':utf8';
+foreach my $item (@{$$tree{'@graph'}}){
+#	print STDERR "\n$$item{$firstFieldKey}\n\n";
+	#print STDERR Dumper $item;
+
+	if(exists ($$item{$firstFieldKey})){
+		#${$index{$filepath}}{$key}=$value;
+		#push(my @keyValues,dumpHash($item));
+		#print @keyValues."\n";
+		#foreach my $element (\@keyValues){
+		#	print $element."\n";
+		#}
+		#print STDERR "ID $$item{$firstFieldKey}\n";
+		my $keyvalues=dumpHash($item);
+		#print STDERR "$$item{$firstFieldKey}\t$keyvalues\n";
+		print TMPINDEX "$$item{$firstFieldKey}\t$keyvalues\n";
+		#${$index{$filepath}}{$key}=$value;
+#		print STDERR "DUMP: ".dumpHash($item);
+		#print STDERR Dumper $item."\ntype=$itemType\n";
+
+	}
+	else{
+		print STDERR "ERROR: Current item has no '$firstFieldKey' property. Skipped.\n";
+		
+	}
+
+}
+close TMPINDEX;
+my %indexFileHash=indexFileToHash($tmpIndex);
+#foreach 
+#print STDERR Dumper \%indexFileHash;
+my $indexFile=indexHashToIndexFile(\%indexFileHash);
+print $indexFile;
+`rm -f $tmpIndex`;
+
+sub dumpHash{ #inspired from http://www.perlmonks.org/?node_id=626192
+	my $var=$_[0];
+	my $fullpath=$_[1];
+	my $varType=ref($var);
+	$fullpath='' unless($fullpath);
+	#print STDERR "\nfullpath tracked: $fullpath\n";
+	#print STDERR "\nVAR ($varType): ".Dumper $var;
+	if($varType eq 'HASH'){
+		my $fullpath2='';
+		for my $key (sort keys %$var) {
+			if($key=~/;/ || $key=~/\./ || $key=~/=/){
+				die "Special character detected in key $key. Cannot continue.\n";
+			}
+			if($fullpath){
+					#print STDERR "$fullpath.$key\n";
+	        			$fullpath2 .= dumpHash($var->{$key}, "$fullpath.$key");
+	        		}
+	        		else{
+	        			$fullpath2 .= dumpHash($var->{$key}, "$key");
+	        		}
+    		
+    		}
+    		return $fullpath2;
+	}
+	elsif ($varType eq 'ARRAY'){
+		my $fullpath2='';
+		#my $arrayFullpath=$fullpath;
+		#$arrayFullpath=~s/\@//g;
+		#foreach my $i (@$var){
+		for (my $i=0; $i<=$#$var;$i++){
+		#	$$var[$i]=~s/[();'"=]//g;
+			if($fullpath){
+	        			$fullpath2 .= dumpHash($$var[$i], "$fullpath.$i");
+	        		}
+	        		else{
+	        			$fullpath2 .= dumpHash($$var[$i], "$i");
+	        		}
+			#$str.="$arrayFullpath.$i=\"$$var[$i]\"; "
+		}
+		#$str=~s/[()]//g;
+		return $fullpath2;
+	}
+	else{ #then it must be a scalar
+#		print STDERR  "STR2 $var\n";
+		#my @kv=($fullpath, $var);
+		#print STDERR  "kv ".join("=",@kv)."\n";
+#		print STDERR "ori $fullpath $var\n";
+		$fullpath=~s/\@//g;
+#		print STDERR "mod $fullpath $var\n";
+		#print STDERR "@fullpath\n";
+		my $modifiedVar=$var;
+		#if($fullpath[$#fullpath] ne 'description'){
+		if($modifiedVar=~s/["\n\t]/ /g | $modifiedVar=~s/; /, /g){
+				#if($fullpath[$#fullpath] ne 'description'){
+					#print STDERR "Value modified for $fullpath:\nBEFORE: $var\nAFTER : $modifiedVar\n"
+				#}	
+		}	
+		#make a labExpId field, for backward compatibility with encode2
+		my @fullpathLabExpId=split('\.',$fullpath);
+		my $fullpathLabExpId=undef;
+		if($fullpathLabExpId[$#fullpathLabExpId] eq 'accession' && $modifiedVar =~ /ENCLB\d/){
+			$fullpathLabExpId[$#fullpathLabExpId]='labExpId';
+			$fullpathLabExpId=join(".", @fullpathLabExpId);
+		}
+		unless ($fullpath =~/award\.description$/){
+			if (defined $fullpathLabExpId){
+				return "$fullpath=\"$modifiedVar\"; $fullpathLabExpId=\"$modifiedVar\"; ";
+			}
+			else{
+				return "$fullpath=\"$modifiedVar\"; ";
+			}
+		}
+		else{
+			return '';
+		}
+	}
+}
+
+#index file hash looks like:
+#${$index{$filepath}}{$key}=$value;

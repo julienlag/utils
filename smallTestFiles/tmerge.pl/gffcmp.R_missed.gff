@@ -1,0 +1,7 @@
+chr1	hts	transcript	50	450	.	+	.	ID=tr1_8;geneID=geneA
+chr1	hts	exon	50	100	.	+	.	Parent=tr1_8
+chr1	hts	exon	150	200	.	+	.	Parent=tr1_8
+chr1	hts	exon	250	310	.	+	.	Parent=tr1_8
+chr1	hts	exon	350	450	.	+	.	Parent=tr1_8
+chr1	hts	transcript	635	650	.	+	.	ID=tr17_6;geneID=geneF
+chr1	hts	exon	635	650	.	+	.	Parent=tr17_6

@@ -1,0 +1,30 @@
+# gffcompare v0.11.2 | Command line was:
+#/users/rg/jlagarde/bin/gffcompare_build/gffcompare/gffcompare --debug -X -D -r test.gff test.gff
+#
+
+#= Summary for dataset: test.gff 
+#     Query mRNAs :      41 in      12 loci  (27 multi-exon transcripts)
+#            (8 multi-transcript loci, ~3.4 transcripts per locus)
+# Reference mRNAs :      43 in      12 loci  (28 multi-exon)
+# Super-loci w/ reference transcripts:       12
+#-----------------| Sensitivity | Precision  |
+        Base level:   100.0     |   100.0    |
+        Exon level:   100.0     |   100.0    |
+      Intron level:   100.0     |   100.0    |
+Intron chain level:    96.4     |   100.0    |
+  Transcript level:    95.3     |   100.0    |
+       Locus level:   100.0     |   100.0    |
+
+     Matching intron chains:      27
+       Matching transcripts:      41
+              Matching loci:      12
+
+          Missed exons:       0/82	(  0.0%)
+           Novel exons:       0/81	(  0.0%)
+        Missed introns:       0/39	(  0.0%)
+         Novel introns:       0/39	(  0.0%)
+           Missed loci:       0/12	(  0.0%)
+            Novel loci:       0/12	(  0.0%)
+
+ Total union super-loci across all input datasets: 12 
+24 out of 41 consensus transcripts written in gffcmp.combined.gtf (17 discarded as redundant)

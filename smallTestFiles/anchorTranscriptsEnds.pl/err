@@ -1,0 +1,1956 @@
+Reading list of 5' supported transcripts from /users/rg/jlagarde/projects/encode/scaling/whole_genome/lncRnaCapture/pacbio_mappings/transcript_ends/hs.cageSupportedReads.list ...
+Done
+Reading list of 3' supported transcripts from /users/rg/jlagarde/projects/encode/scaling/whole_genome/lncRnaCapture/pacbio_mappings/transcript_ends/hs.gtag.bothAdapters.polyA.Reads.list ...
+Done
+Reading 5' BED coordinates of TSS clusters test.5pEnds.bed ...
+Done
+Reading 3' BED coordinates of TTS clusters test.3pEnds.bed ...
+Done
+Parsing input GFF test.gff
+Done
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs is 5'-supported. Anchoring/adjusting its TSS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'cageOnly-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'cageOnly-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            363,
+            365,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+            },
+            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs is 5'-supported. Anchoring/adjusting its TSS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            96,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            91,
+            93,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            96,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            91,
+            93,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            86,
+            88,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'cageOnly+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr1',
+            'hts',
+            'exon',
+            96,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            91,
+            93,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            86,
+            88,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'cageOnly+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ],
+          [
+            'chr1',
+            'hts',
+            'exon',
+            81,
+            83,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'cageOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+            },
+            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs is 3'-supported. Anchoring/adjusting its TTS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'polyAOnly-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'polyAOnly-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            85,
+            87,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+            },
+            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs is 5'-supported. Anchoring/adjusting its TSS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            363,
+            365,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs is 3'-supported. Anchoring/adjusting its TTS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '-',
+            '.',
+            {
+              'gene_id' => 'both-',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            85,
+            87,
+            '.',
+            '-',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both-',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+            },
+            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs is 3'-supported. Anchoring/adjusting its TTS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'polyAOnly+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr2',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'polyAOnly+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ],
+          [
+            'chr2',
+            'hts',
+            'exon',
+            363,
+            365,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'polyAOnly+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+            },
+            'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs is 5'-supported. Anchoring/adjusting its TSS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            100,
+            '150',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            95,
+            97,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            90,
+            92,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            85,
+            87,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs is 3'-supported. Anchoring/adjusting its TTS.
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+2 currentExonChain: $VAR1 = [
+          [
+            'chr3',
+            'hts',
+            'exon',
+            300,
+            '350',
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            353,
+            355,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            358,
+            360,
+            '.',
+            '+',
+            '.',
+            {
+              'gene_id' => 'both+',
+              'fakeExon' => 'yes',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ],
+          [
+            'chr3',
+            'hts',
+            'exon',
+            363,
+            365,
+            '.',
+            '+',
+            '.',
+            {
+              'fakeExon' => 'yes',
+              'gene_id' => 'both+',
+              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+            },
+            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+          ]
+        ];
+$VAR1 = {
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs' => [
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '100',
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	100	150	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '200',
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	200	250	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '300',
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	300	350	.	+	.	gene_id "none+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_101940_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs' => [
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            100,
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	100	150	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            200,
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	200	250	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            300,
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            353,
+                                                                                            355,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            358,
+                                                                                            360,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            363,
+                                                                                            365,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'cageOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	300	350	.	-	.	gene_id "cageOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_102876_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs' => [
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '10',
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	10	150	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '200',
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	200	250	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr4',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            '300',
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'none-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs'
+                                                                                            },
+                                                                                            'chr4	hts	exon	300	350	.	-	.	gene_id "none-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100943_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs' => [
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            96,
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            200,
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	200	250	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            300,
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	300	350	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            91,
+                                                                                            93,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            86,
+                                                                                            88,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr1',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            81,
+                                                                                            83,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'cageOnly+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs'
+                                                                                            },
+                                                                                            'chr1	hts	exon	100	150	.	+	.	gene_id "cageOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_103000_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs' => [
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            100,
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            200,
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	200	250	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            300,
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	300	350	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            95,
+                                                                                            97,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            90,
+                                                                                            92,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr2',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            85,
+                                                                                            87,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'polyAOnly-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs'
+                                                                                            },
+                                                                                            'chr2	hts	exon	80	150	.	-	.	gene_id "polyAOnly-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100282_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs' => [
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            100,
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            200,
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	200	250	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            300,
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            353,
+                                                                                            355,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            358,
+                                                                                            360,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both-',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            363,
+                                                                                            365,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	320	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            95,
+                                                                                            97,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            90,
+                                                                                            92,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both-',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            85,
+                                                                                            87,
+                                                                                            '.',
+                                                                                            '-',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both-',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	143	150	.	-	.	gene_id "both-"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100578_ccs";'
+                                                                                          ]
+                                                                                        ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs' => [
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           100,
+                                                                                           '150',
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	100	150	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ],
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           200,
+                                                                                           '250',
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	200	250	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ],
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           300,
+                                                                                           '350',
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ],
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           353,
+                                                                                           355,
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'fakeExon' => 'yes',
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ],
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           358,
+                                                                                           360,
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'fakeExon' => 'yes',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ],
+                                                                                         [
+                                                                                           'chr2',
+                                                                                           'hts',
+                                                                                           'exon',
+                                                                                           363,
+                                                                                           365,
+                                                                                           '.',
+                                                                                           '+',
+                                                                                           '.',
+                                                                                           {
+                                                                                             'fakeExon' => 'yes',
+                                                                                             'gene_id' => 'polyAOnly+',
+                                                                                             'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs'
+                                                                                           },
+                                                                                           'chr2	hts	exon	300	350	.	+	.	gene_id "polyAOnly+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_10066_ccs";'
+                                                                                         ]
+                                                                                       ],
+          'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs' => [
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            100,
+                                                                                            '150',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            200,
+                                                                                            '250',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	200	250	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            300,
+                                                                                            '350',
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            95,
+                                                                                            97,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            90,
+                                                                                            92,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both+',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            85,
+                                                                                            87,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	100	150	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            353,
+                                                                                            355,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            358,
+                                                                                            360,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'gene_id' => 'both+',
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ],
+                                                                                          [
+                                                                                            'chr3',
+                                                                                            'hts',
+                                                                                            'exon',
+                                                                                            363,
+                                                                                            365,
+                                                                                            '.',
+                                                                                            '+',
+                                                                                            '.',
+                                                                                            {
+                                                                                              'fakeExon' => 'yes',
+                                                                                              'gene_id' => 'both+',
+                                                                                              'transcript_id' => 'm150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs'
+                                                                                            },
+                                                                                            'chr3	hts	exon	300	350	.	+	.	gene_id "both+"; transcript_id "m150306_225315_42137_c100760772550000001823160007221530_s1_p0_100864_ccs";'
+                                                                                          ]
+                                                                                        ]
+        };

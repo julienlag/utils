@@ -1,0 +1,78 @@
+#!/soft/bin/perl -w
+use strict;
+use warnings;
+use SendMail;
+
+
+my $smtpserver	     = "owa.crg.es";
+my $smtpport	     = 587;
+my $sender		     = "JL-perl-mailer <julien.lagarde\@crg.es>";
+my $subject		     = "test";
+#my $recipient	     = "Julien <julien.lagarde\@crg.es>";
+# my $recipient2	     = ""; #"Julien <julienlag\@gmail.com>";
+my @recipients	     = ();#$recipient, $recipient2);
+my $administrator	     = "admin <julien.lagarde\@crg.es>";
+my $administrator2	     = ""; #"admin <julienlag\@gmail.com>";
+my @administrators= ($administrator, $administrator2);
+#my $replyto		     = $sender;
+#my $replyto2	     = $recipient;
+#my @replytos	     = ($replyto, $replyto2);
+my $header		     = "X-Mailer";
+my $headervalue	     = "Perl SendMail";
+my $body	     = "Something went wrong";
+my $fileattach= "";
+my $inline="";
+
+while(<>){
+	chomp;
+	my @line= split "\t";
+	if($line[0] eq "sender"){
+		$sender=$line[1];
+	}
+	elsif ($line[0] eq "subject"){
+		$subject=$line[1];
+	}
+	elsif($line[0] eq "recipient"){
+		@recipients=split(",",$line[1]);
+	}
+	elsif($line[0] eq "fileattach"){
+		$fileattach=$line[1];
+	}
+	elsif($line[0] eq "body"){
+		$body=$line[1];
+	}
+	elsif($line[0] eq "inline"){
+		$inline=$line[1];
+	}
+	else{
+		print STDERR "Malformed line in input\n$_\n";
+	}
+}
+
+
+
+my $sm = new SendMail();
+$sm = new SendMail($smtpserver);
+$sm = new SendMail($smtpserver,	$smtpport);
+
+$sm->setDebug($sm->ON);
+$sm->From($sender);
+$sm->Subject($subject);
+$sm->To(@recipients);
+$sm->ErrorsTo(@administrators);
+$sm->ReplyTo($sender);
+$sm->setMailHeader($header, $headervalue);
+$sm->setMailBody($body);
+$sm->Attach($fileattach);
+$sm->Inline($inline);
+$sm->setAuth($sm->AUTHLOGIN, 'jlagarde', 'blabla');
+if ($sm->sendMail() != 0) {
+  print $sm->{'error'}."\n";
+  exit -1;
+}
+
+#
+# Mail sent successfully.
+#
+print "Done\n\n";
+exit 0;
