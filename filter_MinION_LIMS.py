@@ -5,8 +5,6 @@ import pandas as pd
 
 inputF = sys.argv[1]
 
-print("Input file: ", inputF)
-
 if inputF == '-':
     sampleAnnot = pd.read_table(sys.stdin)
 else:
@@ -18,4 +16,4 @@ subsetSampleAnnot = sampleAnnot[sampleAnnot['filesystem_path'].str.match(
 subsetSampleAnnot = subsetSampleAnnot[[
     'Experiment_group', 'Flowcell_product_code', 'Kit_ID', 'filesystem_path', 'fast5_subdir']]
 
-subsetSampleAnnot.to_csv(sys.stdout, sep='\t', index=False)
+subsetSampleAnnot.to_csv(sys.stdout, sep='\t', header=False, index=False)
