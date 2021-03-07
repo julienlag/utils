@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source $HOME/.bashrc
+/usr/bin/apt-clone clone ${HOME}/ubuntuConfigBackup-$HOSTNAME/ > ${HOME}/ubuntuConfigBackup-$HOSTNAME/apt-clone.log
