@@ -1,3 +1,6 @@
 #!/bin/bash
 
-$HOME/.local/bin/collectiongain $HOME/Music
+for dir in $(echo "$HOME/Music" "$HOME/Desktop/tmp/new_music_to_load/"); do
+$HOME/.local/bin/collectiongain $dir > $dir/collectiongain.log
+done
+
