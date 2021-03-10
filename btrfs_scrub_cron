@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source $HOME/.bashrc
+
+/usr/bin/sudo /usr/bin/btrfs scrub start /
+/usr/bin/sudo /usr/bin/btrfs scrub start /home/
