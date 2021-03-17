@@ -19,6 +19,15 @@ while (<GFF>){
 	$_=~s/"3prime_overlapping_ncrna"/"misc_RNA"/g;
 	$_=~s/"IG_\S*"/"protein_coding"/g;
 	$_=~s/"TR_\S*"/"protein_coding"/g ;
-	$_=~s/"tRNAscan"/"tRNA"/g;
+	$_=~s/"tRNAscan"/"misc_RNA"/g;
+	$_=~s/"Mt_rRNA"/"rRNA"/g;
+	$_=~s/"Mt_tRNA"/"misc_RNA"/g;
+	$_=~s/"ribozyme"/"misc_RNA"/g;
+	$_=~s/"scaRNA"/"misc_RNA"/g;
+	$_=~s/"snoRNA"/"misc_RNA"/g;
+	$_=~s/"snRNA"/"misc_RNA"/g;
+	$_=~s/"sRNA"/"misc_RNA"/g;
+	$_=~s/"TEC"/"misc_RNA"/g;
+	$_=~s/"vaultRNA"/"misc_RNA"/g;
 	print
 }
