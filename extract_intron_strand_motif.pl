@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 use strict;
 use warnings;
 use diagnostics;
@@ -6,7 +6,8 @@ use Data::Dumper;
 use File::Basename;
 use Bio::DB::Fasta;
 use Getopt::Long;
-use Text::Levenshtein::XS qw/distance/;
+use Text::LevenshteinXS qw(distance);
+#use Text::Levenshtein::XS qw/distance/;
 $|=1;
 ####### output:
 ##
