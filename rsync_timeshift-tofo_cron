@@ -1,3 +1,4 @@
 #!/bin/bash
 
+#### keep address 'egon.local' so that host is not encountered outside home network, to avoid syncing on metered connections
 /usr/bin/sudo /usr/bin/rsync --rsync-path="sudo rsync" -aHAXSq --delete /home/timeshift/ jlagarde@egon.local:/home/timeshift-tofo
