@@ -9,9 +9,14 @@ library(tidyverse)
 library(data.table)
 dat<-fread(input, header=F)
 
+#summarise function doesn't like empty data frames, so we need to populate it if empty:
+if(length(dat)==0){
+dat <-data.frame(NA)
+}
+names(dat) <- c('values')
 #dat
 dat %>%
-  summarise(med=median(V1), max=max(V1), min=min(V1)) -> datSumm
+  summarise(med=median(values), max=max(values), min=min(values)) -> datSumm
 
 #datSumm
 write(datSumm$min, '')
