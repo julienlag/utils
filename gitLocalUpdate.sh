@@ -12,7 +12,7 @@ git init
 # initialize git depository (./.git), if it's not been yet created for $dir
 
 echo -e "\n####\n## gitting $dir...\n####"
- for file in `find . -type f | grep -vP "~$"| grep -vP "/\."`; do
+ for file in `find . -type f | grep -vP "~$" | grep -vP "\.git/"`; do
  git add $file;
 # add file to depository's index
  done;
