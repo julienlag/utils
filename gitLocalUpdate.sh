@@ -13,7 +13,7 @@ git init
 
 echo -e "\n####\n## gitting $dir...\n####"
  for file in `find . -type f | grep -vP "~$" | grep -vP "\.git/"`; do
- git add $file;
+ git add -u $file;
 # add file to depository's index
  done;
 echo "Done gitting $dir..."
