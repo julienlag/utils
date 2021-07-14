@@ -1,8 +1,11 @@
 #!/bin/bash
-#set -e
-source ~jlagarde/.bashrc
+
+cd
+
+source .bashrc
+
 now=`now`
-for dir in `cat ~jlagarde/my_git_repositories.list`; do
+for dir in `cat julien_utils_private/my_git_repositories.list`; do
 cd $dir
 rm -f .git/index.lock
 git init
@@ -16,14 +19,15 @@ echo -e "\n####\n## gitting $dir...\n####"
 echo "Done gitting $dir..."
 git commit -m "version $now"
 # commit current version
+cd
 done
 
-cd ~
-for file in `echo .bashrc .bash_profile`; do
-rm -f .git/index.lock
-echo -e "\n####\n## gitting $file...\n####"
-git add $file;
-echo "Done gitting $file..."
-done;
-git commit -m "version $now"
+# cd ~
+# for file in `echo .bashrc .bash_profile`; do
+# rm -f .git/index.lock
+# echo -e "\n####\n## gitting $file...\n####"
+# git add $file;
+# echo "Done gitting $file..."
+# done;
+# git commit -m "version $now"
 

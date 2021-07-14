@@ -4,14 +4,13 @@
 source ~/.bashrc
 # modified from https://github.com/conda/conda/issues/5165
 
-NOW=$(date "+%Y-%m-%d")
-EXPORT_DIR="$HOME/condaEnvExport/envs-$NOW"
-ln -srf $EXPORT_DIR $(dirname $EXPORT_DIR)/$(basename $EXPORT_DIR $NOW)latest
+EXPORT_DIR="$HOME/condaEnvExport/"
 mkdir -p $EXPORT_DIR
 ENVS=$(conda env list | grep '^\w' | cut -d' ' -f1)
 for env in $ENVS; do
 	echo "Exporting $env..."
     conda activate $env
-    conda env export > $EXPORT_DIR/$env.yml
+    conda env export |grep -vP "^prefix: " > $EXPORT_DIR/$env.with-build.yml
+    conda env export --no-builds |grep -vP "^prefix: " > $EXPORT_DIR/$env.yml
     echo "Done."
 done
