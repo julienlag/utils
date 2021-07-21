@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#sudo service autofs stop
-pkill -9 ksysguardd
-loginctl lock-session &
-sleep 1s
-sudo pm-suspend-hybrid
-sudo service autofs forcerestart
