@@ -1,5 +1,0 @@
-#!/bin/bash
-
-flushamount=$1;
-
-head -c $flushamount /dev/zero |perl -ne ''

@@ -1,3 +1,0 @@
-#!/bin/bash
-
-fgrep "Error executing" snakemake.log
