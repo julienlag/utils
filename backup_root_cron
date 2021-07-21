@@ -1,7 +1,0 @@
-#!/bin/bash
-
-source $HOME/.bashrc
-/usr/bin/sudo /usr/bin/rsync -a --delete /etc ${HOME}/ubuntuConfigBackup-$HOSTNAME/sys-backup/
-/usr/bin/sudo /usr/bin/rsync -a --delete /root ${HOME}/ubuntuConfigBackup-$HOSTNAME/sys-backup/
-/usr/bin/sudo /usr/bin/rsync -a --delete /var/snap ${HOME}/ubuntuConfigBackup-$HOSTNAME/sys-backup/var/
-/usr/bin/sudo /usr/bin/rsync -a --delete /snap ${HOME}/ubuntuConfigBackup-$HOSTNAME/sys-backup/
