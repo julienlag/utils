@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# sudo umount /nfs/
-sudo service autofs forcerestart
