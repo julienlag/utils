@@ -1,6 +1,0 @@
-#!/bin/bash
-
-source $HOME/.bashrc
-
-#for each directory containing a file named ".nobackup_egon", make a recursive list of files contained in this directory and write in 
-for file in $(/usr/bin/sudo /usr/bin/find $HOME -name ".nobackup_egon"); do /usr/bin/sudo /usr/bin/find $(/usr/bin/dirname $file) | /usr/bin/sort > $(/usr/bin/dirname $file)/../$(/usr/bin/dirname $file | /usr/bin/awk -F'/' '{print $NF".listing.txt"}'); done
