@@ -1,5 +1,0 @@
-#!/bin/bash
-sudo service autofs stop
-sudo systemctl hibernate
-sleep 20s
-sudo service autofs start
