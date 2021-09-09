@@ -14,5 +14,6 @@ for env in $ENVS; do
     conda env export --no-builds |grep -vP "^prefix: " > $EXPORT_DIR/$env.yml
     echo "Done."
 done
-
- conda clean --all --yes --quiet
+echo "Cleaning up conda install..."
+conda clean --all --yes --quiet
+echo "Done"
